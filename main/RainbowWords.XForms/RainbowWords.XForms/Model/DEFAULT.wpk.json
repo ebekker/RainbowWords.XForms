@@ -1,0 +1,191 @@
+﻿{
+	"name": "MD-CES-2016",
+	"label": "Maryland, Crofton Elementary 2015-16",
+	"groups": [
+		{
+			"label": "Red",
+			"color": "Red",
+			"words": [
+				{ "value": "a" },
+				{ "value": "the" },
+				{ "value": "see" },
+				{ "value": "and" },
+				{ "value": "I" },
+				{ "value": "is" },
+				{ "value": "here" },
+				{ "value": "an" }
+			]
+		},
+		{
+			"label": "Orange",
+			"color": "Orange",
+			"words": [
+				{ "value": "we" },
+				{ "value": "he" },
+				{ "value": "she" },
+				{ "value": "big" },
+				{ "value": "have" },
+				{ "value": "it" },
+				{ "value": "small" },
+				{ "value": "no" }
+			]
+		},
+		{
+			"label": "Yellow",
+			"color": "Yellow",
+			"words": [
+				{ "value": "are" },
+				{ "value": "down" },
+				{ "value": "has" },
+				{ "value": "who" },
+				{ "value": "do" },
+				{ "value": "up" },
+				{ "value": "go" },
+				{ "value": "this" }
+			]
+		},
+
+
+		{
+			"label": "Red",
+			"color": "Red",
+			"words": [
+				{ "value": "a" },
+				{ "value": "the" },
+				{ "value": "see" },
+				{ "value": "and" },
+				{ "value": "I" },
+				{ "value": "is" },
+				{ "value": "here" },
+				{ "value": "an" }
+			]
+		},
+		{
+			"label": "Orange",
+			"color": "Orange",
+			"words": [
+				{ "value": "we" },
+				{ "value": "he" },
+				{ "value": "she" },
+				{ "value": "big" },
+				{ "value": "have" },
+				{ "value": "it" },
+				{ "value": "small" },
+				{ "value": "no" }
+			]
+		},
+		{
+			"label": "Yellow",
+			"color": "Yellow",
+			"words": [
+				{ "value": "are" },
+				{ "value": "down" },
+				{ "value": "has" },
+				{ "value": "who" },
+				{ "value": "do" },
+				{ "value": "up" },
+				{ "value": "go" },
+				{ "value": "this" }
+			]
+		},
+		{
+			"label": "Red",
+			"color": "Red",
+			"words": [
+				{ "value": "a" },
+				{ "value": "the" },
+				{ "value": "see" },
+				{ "value": "and" },
+				{ "value": "I" },
+				{ "value": "is" },
+				{ "value": "here" },
+				{ "value": "an" }
+			]
+		},
+		{
+			"label": "Orange",
+			"color": "Orange",
+			"words": [
+				{ "value": "we" },
+				{ "value": "he" },
+				{ "value": "she" },
+				{ "value": "big" },
+				{ "value": "have" },
+				{ "value": "it" },
+				{ "value": "small" },
+				{ "value": "no" }
+			]
+		},
+		{
+			"label": "Yellow",
+			"color": "Yellow",
+			"words": [
+				{ "value": "are" },
+				{ "value": "down" },
+				{ "value": "has" },
+				{ "value": "who" },
+				{ "value": "do" },
+				{ "value": "up" },
+				{ "value": "go" },
+				{ "value": "this" }
+			]
+		},
+		{
+			"label": "Red",
+			"color": "Red",
+			"words": [
+				{ "value": "a" },
+				{ "value": "the" },
+				{ "value": "see" },
+				{ "value": "and" },
+				{ "value": "I" },
+				{ "value": "is" },
+				{ "value": "here" },
+				{ "value": "an" }
+			]
+		},
+		{
+			"label": "Orange",
+			"color": "Orange",
+			"words": [
+				{ "value": "we" },
+				{ "value": "he" },
+				{ "value": "she" },
+				{ "value": "big" },
+				{ "value": "have" },
+				{ "value": "it" },
+				{ "value": "small" },
+				{ "value": "no" }
+			]
+		},
+		{
+			"label": "Yellow",
+			"color": "Yellow",
+			"words": [
+				{ "value": "are" },
+				{ "value": "down" },
+				{ "value": "has" },
+				{ "value": "who" },
+				{ "value": "do" },
+				{ "value": "up" },
+				{ "value": "go" },
+				{ "value": "this" }
+			]
+		}
+
+		//{
+		//	"label": "",
+		//	"color": "",
+		//	"words": [
+		//		{ "value": "" },
+		//		{ "value": "" },
+		//		{ "value": "" },
+		//		{ "value": "" },
+		//		{ "value": "" },
+		//		{ "value": "" },
+		//		{ "value": "" },
+		//		{ "value": "" }
+		//	]
+		//}
+	]
+}

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RainbowWords.XForms"
+			 xmlns:loutl="clr-namespace:RainbowWords.XForms.Util"
+			 xmlns:loctl="clr-namespace:RainbowWords.XForms.Controls"
+             x:Class="RainbowWords.XForms.MainPage"
+			 xmlns:dl="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+			 Title="Main Page">
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<loutl:StringToColorConverter x:Key="stringToColor" />
+			<loutl:ColorIsLightConverter x:Key="colorIsLight" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	
+	<StackLayout Padding="30">
+		<Label Text="{Binding CurrentWord.Value}" FontSize="30"
+			   HorizontalTextAlignment="Center"/>
+		<!--<StackLayout x:Name="GroupStackLayout" Orientation="Horizontal"
+					 HorizontalOptions="Center">
+
+			--><!--<Label Text="{Binding CurrentGroup.Label}" FontSize="15"
+				   BackgroundColor="{Binding CurrentGroupColor}"
+				   TextColor="{Binding CurrentGroupContrastColor}" />
+
+			<Label Text="{Binding CurrentGroup.Label}" FontSize="15"
+				   BackgroundColor="{Binding CurrentGroupColor}" />--><!--
+
+			<Label Text="{Binding CurrentGroup.Label}" FontSize="15"
+				   TextColor="{Binding CurrentGroupTextColor}"
+				   BackgroundColor="{Binding CurrentGroupColor}"/>
+		</StackLayout>-->
+
+		<StackLayout x:Name="groupStackLayout" Orientation="Horizontal"
+					 HorizontalOptions="Center">
+			<loctl:ItemsScrollView ItemsSource="{Binding AllGroups}"
+								   Orientation="Horizontal" HeightRequest="100">
+				<loctl:ItemsScrollView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout>
+								<Button MinimumWidthRequest="100" FontSize="15"
+										VerticalOptions="Center"
+										HorizontalOptions="Center"
+										Text="{Binding Label}"
+										BackgroundColor="{Binding Color, Converter={StaticResource stringToColor}}"
+										TextColor="{Binding Color,  Converter={StaticResource colorIsLight}, ConverterParameter='#000;#fff'}"
+										Clicked="GroupButton_Clicked"/>
+								<Label Text="^" HorizontalOptions="Center"
+									   IsVisible="{Binding CurrentGroup.Label}" />
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</loctl:ItemsScrollView.ItemTemplate>
+			</loctl:ItemsScrollView>
+
+		</StackLayout>
+
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+			<Button x:Name="FirstButton" IsEnabled="{Binding HasPrevWord}" Text="&lt;"
+					Clicked="FirstButton_Clicked"/>
+			<Button x:Name="PrevButton"  IsEnabled="{Binding HasPrevWord}" Text="&lt;"
+					Clicked="PrevButton_Clicked"/>
+			<Button x:Name="SayButton"  Text="Say"
+					Clicked="SayButton_Clicked"/>
+			<Button x:Name="NextButton" IsEnabled="{Binding HasNextWord}" Text="&gt;"
+					Clicked="NextButton_Clicked" />
+			<Button x:Name="LastButton" IsEnabled="{Binding HasNextWord}" Text="&gt;"
+					Clicked="LastButton_Clicked" />
+		</StackLayout>
+
+	</StackLayout>
+</ContentPage>
